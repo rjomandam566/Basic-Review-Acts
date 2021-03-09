@@ -29,10 +29,10 @@ int main() {
 	float resultDiv;
 
 	printf("Please enter a number \n");
-	scanf_s(" %d", &num1);
+	scanf(" %d", &num1);
 	printf("Entered Number is %d \n \n", num1);
 	printf("Please enter another number \n");
-	scanf_s(" %d", &num2);
+	scanf(" %d", &num2);
 	printf("Entered Number is %d \n \n", num2);	
 
 	resultAdd = num1 + num2;
