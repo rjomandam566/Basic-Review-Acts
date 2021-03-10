@@ -1,5 +1,25 @@
 #include <stdio.h>
 
+    /*
+    Write a C program that asks the user for his/her name and age and then determine whether he/she eligible for voting using Conditional Statements
+Expected Output 1:
+Name: Juan Dela Cruz
+Age: 17
+You are not eligible for voting.
+---------------------------------------------------------
+Expected Output 2:
+Name: Juan Delama
+Age: 18
+You are eligible for voting.
+----------------------------------------------------------
+Expected Output 3:
+Name: Juan Delama De Guzman
+Age: abc
+Invalid Age, Please Try Again.
+
+    */
+
+
 int main() {
     
     char name[25];
