@@ -1,0 +1,43 @@
+/*
+Write a program that tells the user to input an integer and then outputs the number with the digits reversed using Iterative Looping.
+Expected Output 1:
+Input any integer: 12345
+Revised for 12345 is 54321
+---------------------------------------------------------
+Expected Output 2:
+Input any integer: 6789123
+Revised for 6789123 is 3219876
+---------------------------------------------------------
+Expected Output 3:
+Input any integer: ssa2
+The inputted data is Invalid
+*/
+#include <stdio.h>
+
+int main() {
+    int num, num2 = 0;
+    
+    printf("Input numbers: \n");
+    int count = scanf(" %d", &num);
+    
+    
+    
+if(count != 1)
+{
+    printf("invalid input");
+}
+else
+{
+    printf("Reversed for %d is ", num);
+    while(num != 0)
+    {
+        num2 = num2 * 10;
+        num2 = num2 + num%10;       
+        num = num/10;
+    }
+    printf("%d", num2);
+}   
+    
+  return 0;
+}
+
