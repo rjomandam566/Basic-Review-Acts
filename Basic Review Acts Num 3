@@ -1,0 +1,58 @@
+/*
+Write a C Program that checks positive, negative, zero or invalid inputted integer using switch case
+Expected Output 1:
+Input any integer: -6
+The integer is a negative number
+---------------------------------------------------------
+Expected Output 2:
+Input any integer: 5
+The integer is a positive number
+---------------------------------------------------------
+Expected Output 3:
+Input any integer: %6aa
+The inputted data is Invalid
+*/
+
+#include <stdio.h>
+#include <ctype.h>
+
+
+int main() {
+    int inputNum;
+
+
+
+
+    
+    printf("Input a number:\n");
+    scanf(" %d", &inputNum);
+    
+    
+    if (isalpha(inputNum))
+    {
+        printf("The inputted data is Invalid");
+    }
+    else
+    {
+    
+    switch(inputNum > 0) //positive
+    {
+        case 1:
+            printf("The integer is a positive number");
+        break;
+        
+        case 0:
+            switch(inputNum < 0) //negative
+            {
+                case 1:
+                    printf("The integer is a negative number");
+                break;
+                case 0:
+                    printf("The integer is a Zero"); //zero
+                break;
+                
+            }
+        break;
+    }
+    }
+}
