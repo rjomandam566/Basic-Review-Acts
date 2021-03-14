@@ -13,6 +13,7 @@ Input any integer: %6aa
 The inputted data is Invalid
 */
 
+
 #include <stdio.h>
 #include <ctype.h>
 
@@ -24,16 +25,16 @@ int main() {
 
 
     
-    printf("Input a number:\n");
-    scanf(" %d", &inputNum);
+printf("Input a number:\n");
+int count = scanf(" %d", &inputNum);
     
     
-    if (isalpha(inputNum))
-    {
-        printf("The inputted data is Invalid");
-    }
-    else
-    {
+ if(count != 1)
+{
+    printf("The inputted data is Invalid");
+}
+else
+{
     
     switch(inputNum > 0) //positive
     {
